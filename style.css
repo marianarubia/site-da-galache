@@ -1,0 +1,242 @@
+/* ======== GLOBAL ======== */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-logo {
+  width: 150px;
+}
+
+nav a {
+  margin-left: 24px;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-weight: 600px;
+  transition: 0.3s ease;
+}
+
+
+.solucoes {
+  padding: 20px;
+  text-align: center; /* centraliza o texto */
+}
+
+.solucoes p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.solucoes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centraliza os itens */
+  gap: 30px; /* espaço entre os blocos */
+}
+
+.solucao-item {
+  display: flex;
+  flex-direction: column; /* ícone em cima, texto embaixo */
+  align-items: center;
+  width: 150px; /* largura fixa do bloco */
+}
+
+.solucao-item img {
+  width: 80px; /* tamanho do ícone */
+  height: auto;
+  margin-bottom: 10px; /* espaço entre ícone e texto */
+}
+
+.solucao-item span {
+  text-align: center;
+  font-size: 14px;
+}
+
+
+nav a:hover {
+  opacity: 0.6;
+}
+
+/* ======== SLIDER ======== */
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero-slider .slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 1.2s ease, transform 1.8s ease;
+}
+
+.hero-slider .slide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.slider-overlay {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  transform: translateY(-50%) translateX(-30px);
+  color: #525252;
+  z-index: 10;
+  opacity: 0;
+  transition: all 1.2s ease;
+}
+
+body.loaded .slider-overlay {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+.slider-overlay h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.slider-overlay p {
+  font-size: 1.4em;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* ======== SECTIONS ======== */
+.section {
+  font-size: 15px;
+  text-align: center;
+    padding: 30px 50px;
+    color: #000
+}
+
+.valores-grid {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  color:#000
+}
+
+.valor-card {
+  max-width: 400px;
+  text-align: center;
+}
+
+.valor-card img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+/* ======== CLIENTES ======== */
+.clientes-section {
+  padding: 0px 40px;
+  text-align: center;
+}
+
+.clientes-section h3 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.clientes-sub {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.clientes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  align-items: center;
+}
+
+.cliente-logo img {
+  max-width: 120px;
+  opacity: 0.85;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.cliente-logo img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* ======== CARDS ======== */
+.cards {
+  font: Montserrat, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+  background-color: #eeeeee;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+}
+
+/* ======== FOOTER ======== */
+.footer {
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(10px);
+  padding: 10px 10px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.footer a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer-copy {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #1f3b83;
+  border-radius: 8px;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
