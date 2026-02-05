@@ -74,12 +74,46 @@ body {
 }
 
 /* ===== MENU MOBILE ===== */
+/* Botão hamburguer */
 .menu-toggle {
   display: none;
-  font-size: 1.8rem;
+  font-size: 28px;
+  background: none;
+  border: none;
   cursor: pointer;
-  color: #002d70;
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 70px; /* altura do header */
+    right: 0;
+    background: #0256b3;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+
+    display: none; /* escondido por padrão */
+  }
+
+  .nav a {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .nav.active {
+    display: flex; /* mostra quando abre */
+  }
+}
+
+
 
 /* ===== HERO SLIDER ===== */
 .slider-hero {
