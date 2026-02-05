@@ -24,15 +24,24 @@ backToTop.addEventListener('click', () => {
 // ===== SWIPER HERO =====
 const swiper = new Swiper('.swiper-container', {
   loop: true,
+  slidesPerView: 1,
   autoplay: { delay: 5000 },
+  
+  // Navegação
   navigation: {
     nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
+    prevEl: '.swiper-button-prev',
   },
+  
+  // Paginação
   pagination: {
     el: '.swiper-pagination',
-    clickable: true
-  }
+    clickable: true,
+  },
+  
+  // Mobile
+  touchRatio: 1,
+  grabCursor: true,
 });
 
 // ===== HERO ANIMAÇÃO =====
