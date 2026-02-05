@@ -365,6 +365,55 @@ body, html {
   background: #003d80;
 }
 
+
+/* ===== Clientes Galache ===== */
+/* Clientes – Grid Responsivo */
+.galache-clientes {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.galache-clientes h2{
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #013646;
+}
+
+.grid-clientes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 30px;
+  align-items: center;
+  justify-items: center;
+}
+
+.grid-clientes .item {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.grid-clientes .item img {
+  max-width: 120px;
+  max-height: 80px;
+  filter: grayscale(80%);
+  transition: filter 0.35s ease;
+}
+
+/* Efeitos de hover */
+.grid-clientes .item:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.grid-clientes .item:hover img {
+  filter: grayscale(0%);
+}
+
+
+
 /* ===== MAP ===== */
 .map-container {
   width: 100%;
