@@ -1,147 +1,213 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Galache Engenharia</title>
 
+  <!-- ===== FONTS ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="https://galache.com.br/site-2017/wp-content/uploads/2017/05/favicon.png" type="image/x-icon">
+  <!-- ===== FAVICONS ===== -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#0256b3">
+  <meta name="theme-color" content="#0256b3">
+
+  <!-- ===== SWIPER ===== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ======== HEADER ======== -->
+  <!-- ===== HEADER ===== -->
   <header class="header">
-    <div class="logo">
-      <img src="assets/galache-removebg-preview.png" alt="Galache Engenharia" class="header-logo">
+    <div class="container header-content">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Galache Engenharia">
+      </div>
+      <nav class="nav">
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#localizacao">Localização</a>
+        <a href="https://wa.me/5511999400606" target="_blank" class="btn-whats">WhatsApp</a>
+      </nav>
+      <button class="menu-toggle">☰</button>
     </div>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#clientes">Clientes</a>
-      <a href="#contato">Contato</a>
-    </nav>
   </header>
 
-  <!-- ======== SLIDER HERO ======== -->
-  <section class="hero-slider" id="home">
-    <div class="slide active" style="background-image: url('https://galache.com.br/site-2017/wp-content/uploads/2017/05/slider-cidade.jpg');"></div>
-    <div class="slide" style="background-image: url('https://galache.com.br/site-2017/wp-content/uploads/2017/05/slider-escritorio.jpg');"></div>
+  <!-- ===== HERO SLIDER ===== -->
+  <section class="slider-hero" id="home">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
 
-    <div class="slider-overlay">
-      <h1>Soluções em Engenharia</h1>
-      <p>Transformando ideias em realidade com eficiência e inovação</p>
+        <div class="swiper-slide">
+          <div class="image-layer" style="background-image: url('assets/predio.jpg');"></div>
+          <div class="main-slider__content">
+            <h2>Bem-vindo à Galache Engenharia</h2>
+            <p>Excelência em laudos e consultoria técnica</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="image-layer" style="background-image: url('assets/engenheiros.jpg');"></div>
+          <div class="main-slider__content">
+            <h2>Equipe Especializada</h2>
+            <p>Profissionais qualificados para cada projeto</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="image-layer" style="background-image: url('assets/farol.jpg');"></div>
+          <div class="main-slider__content">
+            <h2>Laudos com Precisão</h2>
+            <p>Mais de 48.000 avaliações realizadas</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Navegação -->
+      <div class="swiper-button-prev"><i class="icon-left-arrow">‹</i></div>
+      <div class="swiper-button-next"><i class="icon-right-arrow">›</i></div>
+      <div class="swiper-pagination"></div>
     </div>
   </section>
 
-  <!-- ======== SOLUÇÕES ======== -->
-  <div class="solucoes">
-    <p>A Galache Engenharia, por meio de seu experiente corpo técnico, realizou mais de 48.000 laudos e está capacitada a realizar avaliações de imóveis urbanos para:</p>
+  <!-- ===== SOBRE ===== -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <h2>Sobre a Galache Engenharia</h2>
+      <p class="section-text">
+        Atuamos com foco em avaliações imobiliárias, perícias técnicas e consultoria em engenharia,
+        com ampla experiência em instituições financeiras e empresas do setor. Prezamos pela qualidade, agilidade e confiabilidade.
+      </p>
 
-    <div class="solucoes-grid">
-      <div class="solucao-item">
-        <img src="assets/solucao-01.png" alt="Instituições Financeiras">
-        <span>Instituições Financeiras</span>
-      </div>
-      <div class="solucao-item">
-        <img src="assets/solucao-02.png" alt="Empresas de Securitizadoras">
-        <span>Empresas de Securitizadoras</span>
-      </div>
-      <div class="solucao-item">
-        <img src="assets/solucao-03.png" alt="Empresas de Recuperação de Crédito">
-        <span>Empresas de Recuperação de Crédito</span>
-      </div>
-      <div class="solucao-item">
-        <img src="assets/solucao-04.png" alt="Empresas de Consultoria Imobiliária">
-        <span>Empresas de Consultoria Imobiliária</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ======== SOBRE ======== -->
-  <section id="sobre" class="section">
-    <h1>SOBRE NÓS</h1>
-    <p>A Galache Engenharia Ltda., fundada em 1998, atua em avaliações de imóveis urbanos, perícias de engenharia, fiscalização, gerenciamento e acompanhamento de obras. A qualidade técnica dos serviços e relacionamentos éticos são premissas de todos os projetos.</p>
-
-    <div class="valores-grid">
-      <div class="valor-card">
-        <img src="https://galache.com.br/site-2017/wp-content/uploads/2017/05/quem-somos-01.png" alt="Missão">
-        <h4>Missão</h4>
-        <p>Atender com excelência as demandas dos clientes, atuando com responsabilidade, comprometimento e confiabilidade.</p>
-      </div>
-      <div class="valor-card">
-        <img src="assets/quem-somos-02.png" alt="Visão">
-        <h4>Visão</h4>
-        <p>Ser referência na prestação de serviços de engenharia, com alto nível de qualidade e excelente relacionamento com clientes.</p>
-      </div>
-      <div class="valor-card">
-        <img src="https://galache.com.br/site-2017/wp-content/uploads/2017/05/quem-somos-03-novo.png" alt="Valores">
-        <h4>Valores</h4>
-        <p>Comprometimento, integridade, transparência, solidez e confiança.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== CLIENTES ======== -->
-  <section id="clientes" class="clientes-section">
-    <h3>NOSSOS CLIENTES</h3>
-    <p class="clientes-sub">Empresas que confiam em nossas soluções</p>
-    <div class="clientes-grid">
-      <div class="cliente-logo"><img src="assets/inter.png" alt="Cliente 1"></div>
-      <div class="cliente-logo"><img src="assets/Crefisa.png" alt="Cliente 2"></div>
-      <div class="cliente-logo"><img src="assets/caixa.png" alt="Cliente 3"></div>
-      <div class="cliente-logo"><img src="assets/banco-safra-logo-png_seeklogo-526674.png" alt="Cliente 4"></div>
-      <div class="cliente-logo"><img src="assets/banco-daycoval-logo-png_seeklogo-259781.png" alt="Cliente 5"></div>
-      <div class="cliente-logo"><img src="assets/bradesco.png" alt="Cliente 6"></div>
-      <div class="cliente-logo"><img src="assets/creditas.png" alt="Cliente 7"></div>
-      <div class="cliente-logo"><img src="assets/itau.png" alt="Cliente 8"></div>
-      <div class="cliente-logo"><img src="assets/pan.png" alt="Cliente 9"></div>
-      <div class="cliente-logo"><img src="assets/funcef.png" alt="Cliente 10"></div>
-      <!-- repita para os outros clientes conforme necessário -->
-    </div>
-  </section>
-
-  <!-- ======== SERVIÇOS ======== -->
-  <section id="servicos" class="section">
-    <h3>SERVIÇOS</h3>
-    <div class="cards">
-      <div class="card">
-        <h4>Projeto Estrutural</h4>
-        <p>Desenvolvemos projetos completos e detalhados.</p>
-      </div>
-      <div class="card">
-        <h4>Consultoria Técnica</h4>
-        <p>Assessoria especializada em engenharia civil e industrial.</p>
-      </div>
-      <div class="card">
-        <h4>Gestão de Obras</h4>
-        <p>Supervisão completa para entrega dentro do prazo e custo.</p>
+      <div class="valores-grid">
+        <div class="valor-card">
+          <img src="assets/missão.png" alt="Missão">
+          <h4>Missão</h4>
+          <p>Atender com excelência, responsabilidade e comprometimento.</p>
+        </div>
+        <div class="valor-card">
+          <img src="assets/visão.png" alt="Visão">
+          <h4>Visão</h4>
+          <p>Ser referência em serviços técnicos de engenharia e avaliações.</p>
+        </div>
+        <div class="valor-card">
+          <img src="assets/valores.png" alt="Valores">
+          <h4>Valores</h4>
+          <p>Ética, transparência, qualidade e confiança.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ======== FOOTER ======== -->
+  <!-- ===== SERVIÇOS ===== -->
+  <section class="section section-gray" id="servicos">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h4>Avaliação de Imóveis</h4>
+          <p>Avaliações técnicas de imóveis urbanos e rurais para diversas finalidades.</p>
+        </div>
+        <div class="card">
+          <h4>Perícias e Avaliações Judiciais</h4>
+          <p>Atuação como perito ou assistente técnico em processos judiciais.</p>
+        </div>
+        <div class="card">
+          <h4>Inspeção Técnica de Vizinhança</h4>
+          <p>Vistorias cautelares para segurança de obras e empreendimentos.</p>
+        </div>
+        <div class="card">
+          <h4>Estudo de Viabilidade Técnica</h4>
+          <p>Análise técnica para tomada de decisão em investimentos imobiliários.</p>
+        </div>
+        <div class="card">
+          <h4>Consultoria Técnica Imobiliária</h4>
+          <p>Apoio especializado para aquisição e avaliação de imóveis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIFERENCIAIS ===== -->
+  <section class="section diferenciais-section">
+    <div class="container">
+      <h2>Por que escolher a Galache?</h2>
+      <div class="diferenciais-grid">
+        <div class="diferencial-card">
+          <img src="assets/icone-experiencia.png" alt="Experiência">
+          <h4>15+ anos de experiência</h4>
+          <p>Atuando com excelência e qualidade em cada projeto realizado.</p>
+        </div>
+        <div class="diferencial-card">
+          <img src="assets/icone-laudos.png" alt="Laudos">
+          <h4>+48.000 laudos realizados</h4>
+          <p>Experiência comprovada em avaliações técnicas e perícias judiciais.</p>
+        </div>
+        <div class="diferencial-card">
+          <img src="assets/icone-equipe.png" alt="Equipe">
+          <h4>Equipe especializada</h4>
+          <p>Profissionais qualificados garantindo precisão e confiabilidade.</p>
+        </div>
+        <div class="diferencial-card">
+          <img src="assets/icone-atendimento.png" alt="Atendimento">
+          <h4>Atendimento personalizado</h4>
+          <p>Foco no cliente e soluções adaptadas às suas necessidades.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+<section class="cta"> <div class="container cta-content"> <h2>Precisa de um laudo ou consultoria técnica?</h2> <p>Entre em contato com nossa equipe especializada e tenha um atendimento rápido e personalizado.</p> <a href="https://wa.me/5511999400606" target="_blank" class="btn-primary btn-cta">Chamar no WhatsApp</a> </div> </section>
+
+  <!-- ===== LOCALIZAÇÃO ===== -->
+  <section class="section" id="localizacao">
+    <div class="container">
+      <h2>Nossa Localização</h2>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.66043383276!2d-46.5358994!3d-23.6523288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4294e70aafd9%3A0xd2b4d43586d3e4ad!2sGalache%20Engenharia!5e0!3m2!1spt-BR!2sbr!4v1770242677029!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
   <footer class="footer" id="contato">
-    <section class="cta-banner">
-      <div class="container">
-        <h3>Precisa de um laudo técnico ou consultoria? <strong>Fale com nossos especialistas.</strong></h3>
-        <a class="btn btn-primary" href="mailto:contato@galache.com.br?subject=Solicitação de Consultoria&body=Olá, gostaria de mais informações sobre os serviços.">Contato</a>
+    <div class="container footer-container">
+      <div class="footer-logo">
+        <img src="assets/logo.png" alt="Galache Engenharia">
+        <div class="footer-equipe">
+          <p><strong>Equipe Galache Engenharia:</strong> liderada pelo Eng. <strong>Tales Galache</strong>, pós-graduado em avaliações e perícias em engenharia. O quadro fixo de colaboradores é composto por engenheiros civis, engenheiros industriais/produção, arquitetos e administradores de empresas.</p>
+        </div>
       </div>
-    </section>
-
-    <div class="footer-content">
-      <p><a href="https://maps.app.goo.gl/E6dQreQoHQCjBH2Y7" target="_blank">R. das Esmeraldas, 387, 11º Andar - Jardim, Santo André - SP</a></p>
-      <p><a href="tel:+551149901515">(11) 4990 1515</a></p>
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <p><a href="tel:551149901515">📞 (11) 4990-1515</a></p>
+        <p><a href="mailto:contato@galache.com.br">✉️ contato@galache.com.br</a></p>
+        <p><a href="https://wa.me/5511999400606">💬 WhatsApp</a></p>
+      </div>
     </div>
-    <div class="footer-copy">
-      © Galache Engenharia — Todos os direitos reservados.
+    <div class="footer-bottom">
+      <p>© 2026 Galache Engenharia — Todos os direitos reservados.</p>
     </div>
   </footer>
 
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop">↑</button>
+
+  <!-- ===== SWIPER JS ===== -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- ===== SCRIPT PRINCIPAL ===== -->
   <script src="script.js"></script>
 </body>
 </html>
